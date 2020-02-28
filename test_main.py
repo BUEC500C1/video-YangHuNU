@@ -4,7 +4,7 @@ import json
 import queue
 import threading
 from twitter_ import twitter_info
-from main import twit_to_image
+from main import twit_to_image, twit_to_image_no_key
 
 if os.path.exists('./keys'):
 	def test_thread1():
