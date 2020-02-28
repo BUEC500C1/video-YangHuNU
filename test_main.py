@@ -74,6 +74,7 @@ if os.path.exists('./keys'):
 
 else:
 	with open('tweets.json') as f:
+		thread_num = 4
 		data = json.load(f)
 		try: 
 			q = queue.Queue(maxsize=4)
