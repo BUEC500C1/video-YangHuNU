@@ -1,4 +1,3 @@
-import ffmpeg
 import os
 from twitter_ import twitter_info
 from PIL import Image, ImageDraw
