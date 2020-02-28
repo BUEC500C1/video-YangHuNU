@@ -36,13 +36,13 @@ All 4 images that have been collected will be made into a output.avi file, which
 
 What will be out put to the command line window shoud look like the image below.
 
-![](https://github.com/BUEC500C1/video-YangHuNU/tree/master/doc/CL_output.png)
+![CL](./doc/CL_output.png)
 
 ## Computer performance
 I have a dual-core processor with 2.9GHz. For each core, 4 threads can be run.
 Here is a graph generate by [python code for process Vs. thread](https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
 
-![](https://github.com/BUEC500C1/video-YangHuNU/tree/master/doc/Performance.png)
+![Performance](./doc/Performance.png)
 
 
 ## Questions to be Answered
