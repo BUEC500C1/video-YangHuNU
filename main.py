@@ -17,8 +17,8 @@ def twit_to_image(q, ti, counter):
 		q.task_done()
 
 # For pytest no key version of twit_to_image
-def twit_to_image(q, counter):
-	While(True):
+def twit_to_image_no_key(q, counter):
+	while(True):
 		content = q.get()
 		generate_image(content, counter)
 		print("Processing"+str(counter)+"thread")
