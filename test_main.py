@@ -7,7 +7,6 @@ from twitter_ import twitter_info
 from main import twit_to_image
 
 if os.path.exists('./keys'):
-
 	def test_thread1():
 		try: 
 			q = queue.Queue(maxsize=1)
@@ -79,7 +78,6 @@ else:
 		try: 
 			q = queue.Queue(maxsize=4)
 			# Fetch API keys
-			ti = twitter_info('keys')
 			for i in range(thread_num):
 				q.put(data[i])
 			# Get and convert tweets to image
