@@ -16,6 +16,14 @@ def twit_to_image(q, ti, counter):
 		print("Processing "+str(counter)+"thread")
 		q.task_done()
 
+# For pytest no key version of twit_to_image
+def twit_to_image(q, counter):
+	While(True):
+		content = q.get()
+		generate_image(content, counter)
+		print("Processing"+str(counter)+"thread")
+		q.task_done
+
 # Get user input from command line interface
 def get_screen_names(q):
 		twit_name = input("Please enter a Twitter user ID: ")

@@ -82,7 +82,7 @@ else:
 				q.put(data[i])
 			# Get and convert tweets to image
 			for i in range(thread_num):
-				t2 = threading.Thread(name="Tweets to image", target=twit_to_image, args=(q,ti,i,))
+				t2 = threading.Thread(name="Tweets to image", target=twit_to_image_no_key, args=(q,i,))
 				t2.daemon = True
 				t2.start()
 			q.join()
