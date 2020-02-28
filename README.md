@@ -7,14 +7,16 @@
 
 ## How to execute
 Need to install tweepy and acquire Twitter API key
+
 `pip install tweepy`
 
 Need to install ffmpeg
+
 `pip install ffmpeg`
 
 You will also need to provide your own API tokens and secrets by creating a file named 'keys'. The content of keys should look like:
+
 ```
-[auth]
 [auth]
 consumer_key = ****
 consumer_secret = ****
@@ -23,6 +25,7 @@ access_secret = ****
 ```
 
 To run the code, type in command line
+
 `python main.py`
 
 Then, provide 4 Twitter user IDs.
