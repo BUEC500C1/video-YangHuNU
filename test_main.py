@@ -23,7 +23,7 @@ if os.path.exists('./keys'):
 		else:
 			assert 1
 
-	def test_tread2():
+	def test_thread2():
 		try: 
 			q = queue.Queue(maxsize=1)
 			# Fetch API keys
@@ -39,7 +39,7 @@ if os.path.exists('./keys'):
 		else:
 			assert 1
 
-	def test_tread3():
+	def test_thread3():
 		try: 
 			q = queue.Queue(maxsize=1)
 			# Fetch API keys
@@ -72,14 +72,14 @@ if os.path.exists('./keys'):
 			assert 1
 
 else:
-	with open('tweets.json') as f:
-		thread_num = 4
-		data = json.load(f)
+	def test_no_key():
+		with open('tweets.json') as f:
+			thread_num = 4
+			data = json.load(f)
 		try: 
 			q = queue.Queue(maxsize=4)
-			# Fetch API keys
 			for i in range(thread_num):
-				q.put(data[str(i)])
+				q.put(str(i))
 			# Get and convert tweets to image
 			for i in range(thread_num):
 				t2 = threading.Thread(name="Tweets to image", target=twit_to_image_no_key, args=(q,i,))

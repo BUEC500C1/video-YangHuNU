@@ -56,7 +56,5 @@ if os.path.exists('./keys'):
 			assert 0
 		else:
 			assert 1
-
-
 else:
 	assert 1

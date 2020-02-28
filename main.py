@@ -2,6 +2,7 @@ import queue
 import threading
 import os
 import time
+import json
 
 from twitter_ import twitter_info
 from text_to_image import generate_image
@@ -22,7 +23,7 @@ def twit_to_image_no_key(q, counter):
 		content = q.get()
 		generate_image(content, counter)
 		print("Processing"+str(counter)+"thread")
-		q.task_done
+		q.task_done()
 
 # Get user input from command line interface
 def get_screen_names(q):
